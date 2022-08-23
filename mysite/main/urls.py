@@ -1,10 +1,10 @@
 from django.urls import path
-from . import views
+from main.views import register_request , homepage
 
 app_name = "main"   
 
 
 urlpatterns = [
-    path("", views.homepage, name="homepage"),
-    path("register", views.register_request, name="register"),
+    path("", homepage, name="homepage"),
+    path("register", register_request, name="register"),
 ]
